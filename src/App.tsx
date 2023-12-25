@@ -109,10 +109,11 @@ const App = () => {
         </div>
         </div>
       )}
-      {!gameOver && <p className="score">Score: {score}</p>}
+      {!gameOver && userAnswers.length !== 10 && <p className="score">Score: {score}</p>}
+      {!gameOver && userAnswers.length === 10 && <p className="final-score">Your Final Score is: {score}</p>}
       {loading && <p className="loading">Loading Questions...</p>}
      
-      {!loading && !gameOver && (
+      {!loading && !gameOver && userAnswers.length !== 10 && (
         <QuestionCard
           questionNr={number + 1}
           totalQuestions={TOTAL_QUESTIONS}

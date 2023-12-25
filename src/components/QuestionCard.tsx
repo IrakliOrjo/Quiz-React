@@ -18,7 +18,7 @@ const QuestionCard: React.FC<Props> = ({
     totalQuestions
 }) => {
 
-    console.log(userAnswer?.correct,'correct answer')
+    console.log(question,'question')
   return (
     <div className="card">
         <p className="number">

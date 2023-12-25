@@ -100,7 +100,7 @@ code {
 .quiz-title {
     align-self: center;
     position: relative;
-    margin-bottom: 13rem;
+    margin-bottom: 10rem;
     width: 10em;
     color: #c54ecf;
     font-weight: 900;
@@ -247,6 +247,13 @@ code {
     font-style: italic;
     letter-spacing: 0.05em;
     display: inline-block;
+}
+
+.final-score {
+  color:white;
+  font-weight: 900;
+  font-size: 44px;
+  margin-top:2rem;
 }
 
 .number {
